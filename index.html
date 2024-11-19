@@ -19,7 +19,6 @@
             width: 100vw;
             height: 100vh;
             z-index: -1;
-            pointer-events: none;
         }
 
         .content {
@@ -38,23 +37,15 @@
     </style>
 </head>
 <body>
-    <!-- Tło wideo -->
-     <iframe 
-    id="video-background" 
-    src="https://www.youtube.com/embed/98skfXw9Goc?autoplay=1&mute=1&controls=0&loop=1&playlist=98skfXw9Goc" 
-    frameborder="0" 
-    allow="autoplay; fullscreen" 
-    allowfullscreen 
-    onload="this.style.display='block';">
-</iframe>
+    <video id="video-background" autoplay loop muted>
+        <source src="https://www.youtube.com/embed/98skfXw9Goc?autoplay=1&mute=1&controls=0&loop=1&playlist=98skfXw9Goc" type="video/mp4">
+    </video>
 
-    <!-- Informacje na ekranie ładowania -->
     <div class="content">
         <h1>Ładowanie serwera...</h1>
         <p class="loading-text">Proszę czekać</p>
     </div>
 </body>
 </html>
-
 
 
