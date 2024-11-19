@@ -12,6 +12,15 @@
             background: black;
         }
 
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+
         .content {
             position: absolute;
             top: 50%;
@@ -28,9 +37,8 @@
     </style>
 </head>
 <body>
-    <video autoplay muted loop playsinline width="100%" height="100%">
-        <source src="/home/garrysmod/html/background.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <video id="video-background" autoplay loop muted>
+        <source src="https://www.youtube.com/embed/98skfXw9Goc?autoplay=1&mute=1&controls=0&loop=1&playlist=98skfXw9Goc" type="video/mp4">
     </video>
 
     <div class="content">
