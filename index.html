@@ -19,6 +19,7 @@
             width: 100vw;
             height: 100vh;
             z-index: -1;
+            pointer-events: none;
         }
 
         .content {
@@ -37,9 +38,14 @@
     </style>
 </head>
 <body>
-    <video id="video-background" autoplay loop muted>
-        <source src="https://www.youtube.com/embed/98skfXw9Goc?autoplay=1&mute=1&controls=0&loop=1&playlist=98skfXw9Goc" type="video/mp4">
-    </video>
+    <iframe 
+        id="video-background" 
+        src="https://www.youtube.com/embed/98skfXw9Goc?autoplay=1&mute=1&controls=0&loop=1&playlist=98skfXw9Goc" 
+        frameborder="0" 
+        allow="autoplay; fullscreen" 
+        allowfullscreen>
+    </iframe>
+
 
     <div class="content">
         <h1>Ładowanie serwera...</h1>
@@ -47,4 +53,5 @@
     </div>
 </body>
 </html>
+
 
